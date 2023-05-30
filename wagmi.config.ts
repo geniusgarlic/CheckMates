@@ -11,7 +11,7 @@ export default defineConfig({
           [chains.mainnet.id]: '0x1A61839Eb5fC6eBBcAe01eD5E79062E598792Dac',
           [chains.goerli.id]: '0x78991BB1D194C1235fe285240af8489CFA552151',
           [chains.foundry.id]: '0xbe18A1B61ceaF59aEB6A9bC81AB4FB87D56Ba167',
-          [chains.localhost.id]: '0x5E5713a0d915701F464DEbb66015adD62B2e6AE9',
+          [chains.localhost.id]: '0x43cA9bAe8dF108684E5EAaA720C25e1b32B0A075',
         },
       },
       project: './contracts',

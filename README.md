@@ -113,3 +113,12 @@ To learn more about [Vite](https://vitejs.dev/), [Foundry](https://book.getfound
 - [wagmi Examples](https://wagmi.sh/examples/connect-wallet) – a suite of simple examples using wagmi.
 - [@wagmi/cli Documentation](https://wagmi.sh/cli) – learn more about the wagmi CLI.
 - [Vite Documentation](https://vitejs.dev/) – learn about Vite features and API.
+
+
+# Troubleshoot
+
+Cannot find module error: related to pnpm/npm, try uninstalling/reinstalling
+
+Config the .env (FORGE_RPC_URL=http://127.0.0.1:8545), (FORGE_PRIVATE_KEY= private key taken from the privates keys when running pnpm anvil)
+
+4 terminal tabs for development: pnpm run dev, pnpm anvil, pnpm deploy (take the address of the deployed contract, copy/paste it in the wagmi.config.ts and rerun pnpm dev), wagmi generate (to refresh the 'generated.ts')
