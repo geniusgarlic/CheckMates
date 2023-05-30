@@ -1,5 +1,5 @@
 import { configureChains, createConfig } from 'wagmi'
-import { foundry, goerli, mainnet } from 'wagmi/chains'
+import { foundry, goerli, mainnet, localhost } from 'wagmi/chains'
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
@@ -12,7 +12,7 @@ const walletConnectProjectId = 'b6ae70cc090f93bef60f57c1eef7f4f8'
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     mainnet,
-    ...(import.meta.env?.MODE === 'development' ? [goerli, foundry] : []),
+    ...(import.meta.env?.MODE === 'development' ? [goerli, foundry, localhost] : []),
   ],
   [
     publicProvider(),

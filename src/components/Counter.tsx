@@ -42,10 +42,16 @@ function SetNumber() {
     onSuccess: () => refetch(),
   })
 
+  console.log("config: ", config);
+  console.log("write: ", write);
+  console.log("data: ", data);
+  console.log("value: ", value);
+
   return (
     <div>
       Set Number:
       <input
+        placeholder='0'
         disabled={isLoading}
         onChange={(e) => setValue(e.target.value)}
         value={value}

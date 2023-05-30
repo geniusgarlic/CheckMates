@@ -10,7 +10,7 @@ export function App() {
 
   return (
     <>
-      <h1>wagmi + Vite</h1>
+      <h1>CheckMates</h1>
 
       <Connect />
 
